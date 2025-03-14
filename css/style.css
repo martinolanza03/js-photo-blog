@@ -35,15 +35,16 @@ body {
 }
 
 .post-it {
-    background-color: #FFFFFF;
     display: flex;
     flex-direction: column;
-    width: 600px;
+    width: calc((100% - 50px)/ 3);
     flex-shrink: 0;
     position: relative;
+    flex-wrap: wrap;
+    gap: 25px;
 }
 
-.post-it img {
+.post-it .image-post-it {
     padding: 25px;
     width: 600px;
     height: 600px;
