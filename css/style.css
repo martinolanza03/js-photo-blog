@@ -29,7 +29,29 @@ h1 {
 Main
 */
 
-main {
+body {
     height: 100vh;
     background-image: url('../img/cork.png');
+}
+
+.post-it {
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.post-it img {
+    padding: 25px;
+    width: 600px;
+    height: 600px;
+    object-fit: contain;
+}
+
+.post-it p {
+    padding-left: 25px;
+    margin-bottom: 30px;
+    font-family: 'Sometype Mono', 'monospace';
 }
