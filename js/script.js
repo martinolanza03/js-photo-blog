@@ -39,7 +39,12 @@ function createCol(data) {
     </div>`
     });
 
-    console.log(items);
+    //console.log(items);
 
     return items;
 }
+
+//Creare un overlay
+const postItElement = document.querySelectorAll('.post-it');
+
+console.log(postItElement);
