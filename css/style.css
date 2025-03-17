@@ -40,9 +40,12 @@ body {
 
 p {
     padding-left: 25px;
-    margin-bottom: 25px;
-    font-family: 'Sometype Mono', 'monospace';
     align-items: start;
+}
+
+h2 {
+    padding-left: 25px;
+    margin-bottom: 25px;
 }
 
 .pin {
@@ -52,4 +55,8 @@ p {
     top: 0px;
     right: 50%;
     transform: translate(50%, -40%);
+}
+
+.font-card {
+    font-family: 'Sometype Mono', 'monospace';
 }

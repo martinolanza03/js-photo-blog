@@ -19,6 +19,7 @@ const rowElement = document.querySelector('.row');
             <img src="img/wall.png" alt="casual" class="image-post-it">
             <p>ciao</p>
             <img src="img/pin.svg" alt="pin" class="pin">
+            <h2>Ciao</h2>
         </div>
     </div>
 */
@@ -33,6 +34,7 @@ function createCol(data) {
             <img src="${element.url}" alt="${element.title}" class="image-post-it">
             <p>${element.date}</p>
             <img src="img/pin.svg" alt="pin" class="pin">
+            <h2>${element.title}</h2>
         </div>
     </div>`
     });
