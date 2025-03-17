@@ -61,3 +61,27 @@ h2 {
 .post-it {
     font-family: 'Sometype Mono', 'monospace';
 }
+
+/* Overlay */
+
+.overlay {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.7);
+    right: 0;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.overlay img {
+    width: 600px;
+    height: 600px;
+}
+
+.hidden {
+    display: none;
+}
