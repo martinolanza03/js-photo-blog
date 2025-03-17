@@ -30,7 +30,7 @@ function createCol(data) {
 
     data.forEach(element => {
         items += `<div class="col-xl-4 col-md-6 col-sm-12 position-relative">
-        <div class="d-flex flex-column bg-white ">
+        <div class="d-flex flex-column bg-white post-it">
             <img src="${element.url}" alt="${element.title}" class="image-post-it">
             <p>${element.date}</p>
             <img src="img/pin.svg" alt="pin" class="pin">
