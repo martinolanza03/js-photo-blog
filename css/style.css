@@ -60,6 +60,7 @@ h2 {
 
 .post-it {
     font-family: 'Sometype Mono', 'monospace';
+    cursor: pointer;
 }
 
 /* Overlay */

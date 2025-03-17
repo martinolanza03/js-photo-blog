@@ -15,7 +15,7 @@ const rowElement = document.querySelector('.row');
 
 /*
     <div class="col-xl-4 col-md-6 col-sm-12 position-relative">
-        <div class="d-flex flex-column bg-white ">
+        <div class="d-flex flex-column bg-white post-it">
             <img src="img/wall.png" alt="casual" class="image-post-it">
             <p>ciao</p>
             <img src="img/pin.svg" alt="pin" class="pin">
@@ -30,7 +30,7 @@ function createCol(data) {
 
     data.forEach(element => {
         items += `<div class="col-xl-4 col-md-6 col-sm-12 position-relative">
-        <div class="d-flex flex-column bg-white post-it">
+        <div class="d-flex flex-column bg-white post-it" onclick="postItOverlay('${element.url}')">
             <img src="${element.url}" alt="${element.title}" class="image-post-it">
             <p>${element.date}</p>
             <img src="img/pin.svg" alt="pin" class="pin">
@@ -45,6 +45,20 @@ function createCol(data) {
 }
 
 //Creare un overlay
-const postItElement = document.querySelectorAll('.post-it');
+function postItOverlay(element) {
 
-console.log(postItElement);
+    const overLayELement = document.querySelector('.overlay');
+    const overLayImageELement = document.getElementById('image-overlay');
+
+    console.log(overLayELement);
+
+    console.log(element);
+
+    overLayELement.classList.remove('hidden');
+
+    overLayImageELement.src = `${element}`;
+    overLayImageELement.alt = `${element}`;
+    console.log(overLayImageELement);
+
+}
+
