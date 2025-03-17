@@ -46,6 +46,7 @@ function createCol(data) {
 
 const overLayELement = document.querySelector('.overlay');
 const overLayImageELement = document.getElementById('image-overlay');
+const bodyElement = document.getElementById('body');
 
 //Creare un overlay
 function postItOverlay(element) {
@@ -58,6 +59,8 @@ function postItOverlay(element) {
 
     overLayImageELement.src = `${element}`;
     overLayImageELement.alt = `${element}`;
+
+    bodyElement.classList.add('overflow-hidden');
 
     console.log(overLayImageELement);
 
@@ -73,6 +76,7 @@ buttonOverlay.addEventListener('click', function () {
     overLayImageELement.src = " ";
     overLayImageELement.alt = " ";
     overLayELement.classList.add('hidden');
+    bodyElement.classList.remove('overflow-hidden');
 
 });
 
