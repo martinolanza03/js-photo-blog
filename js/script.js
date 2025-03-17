@@ -44,11 +44,11 @@ function createCol(data) {
     return items;
 }
 
+const overLayELement = document.querySelector('.overlay');
+const overLayImageELement = document.getElementById('image-overlay');
+
 //Creare un overlay
 function postItOverlay(element) {
-
-    const overLayELement = document.querySelector('.overlay');
-    const overLayImageELement = document.getElementById('image-overlay');
 
     console.log(overLayELement);
 
@@ -58,7 +58,21 @@ function postItOverlay(element) {
 
     overLayImageELement.src = `${element}`;
     overLayImageELement.alt = `${element}`;
+
     console.log(overLayImageELement);
 
 }
+
+// Funzione chiudere l'overlay
+const buttonOverlay = document.getElementById('close');
+
+console.log(buttonOverlay);
+
+buttonOverlay.addEventListener('click', function () {
+
+    overLayImageELement.src = " ";
+    overLayImageELement.alt = " ";
+    overLayELement.classList.add('hidden');
+
+});
 
