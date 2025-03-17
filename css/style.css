@@ -46,6 +46,7 @@ p {
 h2 {
     padding-left: 25px;
     margin-bottom: 25px;
+    text-transform: uppercase;
 }
 
 .pin {
