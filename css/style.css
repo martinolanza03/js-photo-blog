@@ -61,6 +61,7 @@ h2 {
 .post-it {
     font-family: 'Sometype Mono', 'monospace';
     cursor: pointer;
+    transition: transform 1s;
 }
 
 /* Overlay */
@@ -85,4 +86,11 @@ h2 {
 
 .hidden {
     display: none;
+}
+
+/* Hover */
+
+.post-it:hover {
+    transform: rotate(10deg);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
 }
